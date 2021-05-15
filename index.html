@@ -29,7 +29,7 @@
 
 <body>
 <img src="" id="avatar" alt="">
-<div style="display: none;" id="qrcode"></div>
+<div  id="qrcode"></div>
 <div id="RWM"></div>
 </body>
 <script type="text/javascript"
@@ -81,9 +81,10 @@
 
 
         var myImage = new Image();
+        myImage.src = "./img/bg.png";    //背景图片  你自己本地的图片或者在线图片
+        myImage.crossOrigin = 'Anonymous';
 
         myImage.onload = function () {
-            alert(23)
             canvas.width = document.body.clientWidth;
             canvas.height = myImage.height * 1.2;
             var context = canvas.getContext("2d");
@@ -118,7 +119,6 @@
             img.setAttribute('src', base64);
             // }
         }
-        myImage.src = "./img/bg.png";    //背景图片  你自己本地的图片或者在线图片
     }
 
 
