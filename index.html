@@ -81,7 +81,6 @@
 
 
         var myImage = new Image();
-        myImage.src = "./img/bg.png";    //背景图片  你自己本地的图片或者在线图片
         myImage.crossOrigin = 'Anonymous';
 
         myImage.onload = function () {
@@ -119,6 +118,7 @@
             img.setAttribute('src', base64);
             // }
         }
+        myImage.src = "./img/bg.png";    //背景图片  你自己本地的图片或者在线图片
     }
 
 
