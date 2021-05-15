@@ -81,9 +81,9 @@
 
 
         var myImage = new Image();
-        myImage.crossOrigin = 'Anonymous';
 
         myImage.onload = function () {
+            alert(23)
             canvas.width = document.body.clientWidth;
             canvas.height = myImage.height * 1.2;
             var context = canvas.getContext("2d");
